@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Hasan",
+    "degree": "MD, MS",
+    "image": "https://reactjs.org/logo-og.png",
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "name": "Sarah",
+    "degree": "PhD",
+    "image": "https://example.com/sarah.png",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "James",
+    "degree": "MS, LCSW",
+    "image": "https://example.com/james.png",
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "name": "Emily",
+    "degree": "MS, LMFT",
+    "image": "https://example.com/emily.png",
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "name": "John",
+    "degree": "MD",
+    "image": "https://example.com/john.png",
+    "rating": 5
+  }
+]
