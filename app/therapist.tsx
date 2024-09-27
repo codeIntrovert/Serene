@@ -1,6 +1,7 @@
 import { Text, View, Image, ScrollView } from "react-native";
 import Nav from "@/components/nav";
 import tw from "twrnc";
+import TherapyCard from "@/components/therapyCard";
 export default function Therapist() {
   return (
     <View style={tw``}>
@@ -12,9 +13,7 @@ export default function Therapist() {
             Help is always near
           </Text>
           <ScrollView>
-            <View style={tw`h-40 rounded-2xl w-full bg-slate-800`}>
-              <View></View>
-            </View>
+            <TherapyCard />
           </ScrollView>
         </View>
       </>
