@@ -24,6 +24,41 @@ export default function RootLayout() {
           headerShown: false,
         }}
       />
+      <Stack.Screen
+        name="analytics"
+        options={{
+          // Hide the header for this route
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="journal"
+        options={{
+          // Hide the header for this route
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="motivation"
+        options={{
+          // Hide the header for this route
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="meditation"
+        options={{
+          // Hide the header for this route
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="relax"
+        options={{
+          // Hide the header for this route
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 }
