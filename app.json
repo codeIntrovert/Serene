@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "There4U",
-    "slug": "There4U",
+    "name": "Serene",
+    "slug": "Serene",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -17,15 +17,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#000000"
       },
-      "package": "com.introvertcoder.There4U"
+      "package": "com.introvertcoder.serene"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/logo.png"
     },
     "plugins": [
       "expo-router"
@@ -35,7 +35,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "a777d10e-dfb0-499e-9d73-3b0359dd61f4"
+        "projectId": "1ff37db1-f508-41c3-ad54-03ceb0eb963f"
       }
     }
   }
