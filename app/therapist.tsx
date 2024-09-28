@@ -16,10 +16,10 @@ interface Therapist {
 
 export default function Therapist() {
   return (
-    <View style={tw`bg-slate-900 h-full`}>
+    <View style={tw`bg-[#a5d8ff] h-full`}>
       <Nav />
-      <View style={tw`bg-slate-900 h-full pt-6 px-6`}>
-        <Text style={tw`my-6 font-bold text-white text-2xl`}>
+      <View style={tw`bg-[#a5d8ff] h-full pt-6 px-6`}>
+        <Text style={tw`my-6 font-bold text-[#00000d] text-2xl`}>
           Help is always near
         </Text>
         <ScrollView>

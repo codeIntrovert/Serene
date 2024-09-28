@@ -1,4 +1,4 @@
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, TouchableOpacity, Linking } from "react-native";
 import tw from "twrnc";
 import { SvgXml } from "react-native-svg";
 
@@ -18,15 +18,34 @@ export default function TherapyCard({ therapist }: any) {
     ));
   };
 
+  // Function to handle WhatsApp link
+  const handleConnectPress = () => {
+    const message = `Hello ${therapist.name}, here from There4U`;
+    const phoneNumber = therapist.number; // Use therapist's WhatsApp number
+    const url = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+
+    Linking.canOpenURL(url)
+      .then((supported) => {
+        if (supported) {
+          Linking.openURL(url);
+        } else {
+          alert("WhatsApp is not installed on your device");
+        }
+      })
+      .catch((err) => console.error("An error occurred", err));
+  };
+
   return (
-    <View style={tw`h-45 rounded-2xl w-full bg-slate-800`}>
+    <View style={tw`h-45 rounded-2xl w-full bg-white`}>
       <View style={tw`flex-row w-full p-2`}>
         <Image
           source={{ uri: therapist.image }}
-          style={tw`border-2 border-slate-800 absolute left-3 top-6 bg-green-400 w-18 h-18 rounded-full`}
+          style={tw`border-2 border-slate-800 absolute left-4 top-6 bg-green-400 w-18 h-18 rounded-full`}
         />
         <View style={tw`left-25 top-5`}>
-          <Text style={tw`text-2xl font-bold text-white`}>
+          <Text style={tw`text-2xl font-bold text-black`}>
             {therapist.name}
           </Text>
           <Text style={tw`text-sm font-semibold ml-px text-slate-600`}>
@@ -37,15 +56,16 @@ export default function TherapyCard({ therapist }: any) {
           </View>
         </View>
       </View>
-      <View
-        style={tw`w-full absolute bg-green-700 h-10 bottom-0 rounded-b-xl flex-row`}
+      <TouchableOpacity
+        style={tw`w-full absolute bg-[#006de5] h-10 bottom-0 rounded-b-xl flex-row`}
+        onPress={handleConnectPress} // Add onPress to the button
       >
         <Text
           style={tw`my-auto mx-auto font-semibold text-sm tracking-wide text-white`}
         >
           Connect with {therapist.name}
         </Text>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 }
