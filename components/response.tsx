@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import Markdown from "react-native-markdown-display";
 
 const date = new Date();
-const API_KEY = "YOUR GEMINI API KE";
+const API_KEY = "AIzaSyCosDTe3LCSYYPyzlQ0klLbQP15EJziwW8";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export default function Response(props: any) {
